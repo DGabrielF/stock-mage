@@ -5,11 +5,15 @@ import { FormsModule } from "@angular/forms"
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputComponent } from './components/global/input/input.component';
+import { ButtonComponent } from './components/global/button/button.component';
+import { ClickableDirective } from './components/global/button/clickable.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent
+    InputComponent,
+    ButtonComponent,
+    ClickableDirective
   ],
   imports: [
     BrowserModule,
