@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/global/input/input.component';
 import { ButtonComponent } from './components/global/button/button.component';
 import { ClickableDirective } from './components/global/button/clickable.directive';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     ButtonComponent,
-    ClickableDirective
+    ClickableDirective,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
