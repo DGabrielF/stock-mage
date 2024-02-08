@@ -19,8 +19,8 @@ export class ToggleHidePasswordComponent implements OnInit {
   }
 
   handleShowPassword() {
-    this.showPasswordIcon = this.showPassword?"eye-opened":"eye-closed"
     this.showPassword = !this.showPassword;
+    this.showPasswordIcon = this.showPassword?"eye-opened":"eye-closed"
     this.showPasswordChange.emit(this.showPassword)
   }
 }
