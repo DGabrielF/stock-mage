@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stock-mage';
+  value = ""
+
+  onInputValueChange(newValue: string) {
+    this.value = newValue;
+  }
 }
