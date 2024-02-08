@@ -1,0 +1,15 @@
+<section>
+  <h1>Stock-Mage</h1>
+  <h2>Vamos por a casa em ordem agora!</h2>
+  <div class="input_area">
+    <app-input name="usuário" id="user" type="text"></app-input>
+    <div class="password">
+      <app-input name="senha" id="password" [type]="showPassword?'text':'password'"></app-input>
+      <app-toggle-hide-password [(showPassword)]="showPassword"></app-toggle-hide-password>
+    </div>
+  </div>
+  <div class="button_area">
+    <app-button textContent="entrar"></app-button>
+    <app-button functionOrRoute="register" textContent="registrar"></app-button>
+  </div>
+</section>
