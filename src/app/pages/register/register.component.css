@@ -31,21 +31,6 @@ app-input{
   justify-content: center;
   gap: 6px;
 }
-.password>img{
-  padding: 2px;
-  width: 24px;
-  height: 24px;
-
-  border-radius: 50%;
-}
-.password>img:hover{
-  background-color: #00d9ff44;
-}
-.password>img:active{
-  background-color: #00d9ff22;
-  position: relative;
-  top: 1px;
-}
 app-button{
   width: 100%;
   min-width: 100px;

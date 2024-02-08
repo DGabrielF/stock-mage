@@ -8,6 +8,8 @@ import { InputComponent } from './components/global/input/input.component';
 import { ButtonComponent } from './components/global/button/button.component';
 import { ClickableDirective } from './components/global/button/clickable.directive';
 import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ToggleHidePasswordComponent } from './components/global/toggle-hide-password/toggle-hide-password.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RegisterComponent } from './pages/register/register.component';
     InputComponent,
     ButtonComponent,
     ClickableDirective,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    ToggleHidePasswordComponent
   ],
   imports: [
     BrowserModule,

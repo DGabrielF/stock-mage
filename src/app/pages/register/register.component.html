@@ -5,8 +5,8 @@
     <app-input name="usuário" id="user" type="text"></app-input>
     <app-input name="email" id="email" type="email"></app-input>
     <div class="password">
-      <app-input name="senha" id="password" [type]="passwordType"></app-input>
-      <img (click)="handleShowPassword()" [src]="'../../../assets/images/icons/'+showPasswordIcon+'.svg'" alt="">
+      <app-input name="senha" id="password" [type]="showPassword?'text':'password'"></app-input>
+      <app-toggle-hide-password [(showPassword)]="showPassword"></app-toggle-hide-password>
     </div>
     <app-input name="confirmar" id="confirm" type="password"></app-input>
   </div>
