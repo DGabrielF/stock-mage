@@ -7,9 +7,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class InputComponent implements OnInit {
   @Input() type:string = "text";
+  @Input() id:string = ""
+  @Input() name:string = ""
   @Input() validationResult:boolean = true;
   @Input() disabled:boolean = false;
   @Input() inputValue:string = "";
+  @Input() labelDisabled:boolean = false;
 
   @Output() inputValueChange = new EventEmitter<string>();
 

@@ -1,1 +1,11 @@
-<input [type]="type" [(ngModel)]="inputValue" [class]="error" [disabled]="disabled" (input)="onInputChange($event)">
+<div class="input_item">
+  <label [for]="id?id+'_input':'input'">{{name}}</label>
+  <input
+  [id]="id?id+'_input':'input'"
+  [name]="name?name:'null'"
+  [type]="type"
+  [(ngModel)]="inputValue"
+  [class]="error"
+  [disabled]="disabled"
+  (input)="onInputChange($event)">
+</div>
