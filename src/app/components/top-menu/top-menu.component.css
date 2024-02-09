@@ -11,6 +11,17 @@
   justify-content: space-between;
 
   position: relative;
+  z-index: 5;
+}
+.fade {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #00000044;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }
 
 [class$="_menu_items"] {

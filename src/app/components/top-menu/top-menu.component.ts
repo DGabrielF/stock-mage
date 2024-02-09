@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TopMenuComponent implements OnInit {
   @Input() isLogedIn:boolean = false;
 
-  hideListMenu:boolean = true;
+  hideListMenu:boolean = false;
   loggedInlistMenuItems:{id:string, text:string}[] = [
     {id:"news", text:"Novidades"},
     {id:"lists", text:"Listas"},
@@ -39,15 +39,19 @@ export class TopMenuComponent implements OnInit {
   }
 
   toggleListMenu() {
-    this.hideListMenu = !this.hideListMenu
+    this.hideListMenu = !this.hideListMenu;
     if (!this.hideProfileMenu) {
-      this.hideProfileMenu = !this.hideProfileMenu
+      this.hideProfileMenu = !this.hideProfileMenu;
     }
   }
   toggleProfileMenu() {
-    this.hideProfileMenu = !this.hideProfileMenu
+    this.hideProfileMenu = !this.hideProfileMenu;
     if (!this.hideListMenu) {
-      this.hideListMenu = !this.hideListMenu
+      this.hideListMenu = !this.hideListMenu;
     }
+  }
+  closeMenus() {
+    this.hideListMenu = true;
+    this.hideProfileMenu = true;
   }
 }
