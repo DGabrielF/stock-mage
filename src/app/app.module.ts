@@ -11,6 +11,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ToggleHidePasswordComponent } from './components/global/toggle-hide-password/toggle-hide-password.component';
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
+import { NewsComponent } from './pages/news/news.component';
+import { CarouselCardComponent } from './components/news-page/carousel-card/carousel-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { TopMenuComponent } from './components/top-menu/top-menu.component';
     RegisterComponent,
     LoginComponent,
     ToggleHidePasswordComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    NewsComponent,
+    CarouselCardComponent
   ],
   imports: [
     BrowserModule,

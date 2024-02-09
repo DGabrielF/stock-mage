@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TopMenuComponent implements OnInit {
   @Input() isLogedIn:boolean = false;
 
-  hideListMenu:boolean = false;
+  hideListMenu:boolean = true;
   loggedInlistMenuItems:{id:string, text:string}[] = [
     {id:"news", text:"Novidades"},
     {id:"lists", text:"Listas"},

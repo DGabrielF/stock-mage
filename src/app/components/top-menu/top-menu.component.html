@@ -9,7 +9,7 @@
     [functionOrRoute]="item.id"
     [textContent]="item.text"></app-button>
   </nav>
-  <div class="app_name" routerLink="infos">Stock-Mage</div>
+  <div class="app_name" routerLink="news" (mouseup)="closeMenus()">Stock-Mage</div>
   <div (click)="toggleProfileMenu()" class="profile_menu">
     <span >Nome</span>
     <img src="../../../assets/images/icons/profile-default.svg" alt="">
