@@ -10,6 +10,7 @@ import { ClickableDirective } from './components/global/button/clickable.directi
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ToggleHidePasswordComponent } from './components/global/toggle-hide-password/toggle-hide-password.component';
+import { TopMenuComponent } from './components/top-menu/top-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ToggleHidePasswordComponent } from './components/global/toggle-hide-pas
     ClickableDirective,
     RegisterComponent,
     LoginComponent,
-    ToggleHidePasswordComponent
+    ToggleHidePasswordComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,

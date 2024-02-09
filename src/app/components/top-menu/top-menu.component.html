@@ -1,0 +1,22 @@
+<div class="top_menu">
+  <div (click)="toggleListMenu()" class="list_menu">
+    <span>MENU</span>
+    <img src="../../../assets/images/icons/list-menu.svg" alt="">
+  </div>
+  <nav *ngIf="!hideListMenu" class="list_menu_items">
+    <app-button *ngFor="let item of this.isLogedIn?this.loggedInlistMenuItems:this.notloggedInlistMenuItems"
+    [functionOrRoute]="item.id"
+    [textContent]="item.text"></app-button>
+  </nav>
+  <div class="app_name" routerLink="infos">Stock-Mage</div>
+  <div (click)="toggleProfileMenu()" class="profile_menu">
+    <span >Nome</span>
+    <img src="../../../assets/images/icons/profile-default.svg" alt="">
+  </div>
+  <nav *ngIf="!hideProfileMenu" class="profile_menu_items">
+    <app-button *ngFor="let item of this.isLogedIn?this.loggedInProfileMenuItems:this.notLoggedInProfileMenuItems"
+    [functionOrRoute]="item.id"
+    [textContent]="item.text"
+    >{{item.text}}</app-button>
+  </nav>
+</div>
