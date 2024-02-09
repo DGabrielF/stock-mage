@@ -35,3 +35,21 @@ input.error{
 input.error:focus{
   outline: 1px solid #ff0000;
 }
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+input[type="checkbox"]:checked::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background-color: #00d9ff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
