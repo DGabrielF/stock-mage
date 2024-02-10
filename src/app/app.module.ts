@@ -13,6 +13,7 @@ import { ToggleHidePasswordComponent } from './components/global/toggle-hide-pas
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { NewsComponent } from './pages/news/news.component';
 import { CarouselCardComponent } from './components/news-page/carousel-card/carousel-card.component';
+import { UpdateCardComponent } from './components/news-page/update-card/update-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CarouselCardComponent } from './components/news-page/carousel-card/caro
     ToggleHidePasswordComponent,
     TopMenuComponent,
     NewsComponent,
-    CarouselCardComponent
+    CarouselCardComponent,
+    UpdateCardComponent
   ],
   imports: [
     BrowserModule,

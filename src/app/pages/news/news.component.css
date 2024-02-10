@@ -29,7 +29,6 @@
   justify-content: start;
 
   border: 1px solid black;
-  background-color: sandybrown;
 }
 
 .app_updates{
@@ -38,8 +37,6 @@
   align-items: center;
   justify-content: start;
 
-  border: 1px solid black;
-  background-color: darkcyan;
 }
 
 .support_info{
