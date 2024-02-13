@@ -14,6 +14,8 @@ import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { NewsComponent } from './pages/news/news.component';
 import { CarouselCardComponent } from './components/news-page/carousel-card/carousel-card.component';
 import { UpdateCardComponent } from './components/news-page/update-card/update-card.component';
+import { AppInfoCardComponent } from './components/news-page/app-info-card/app-info-card.component';
+import { TeamInfoCardComponent } from './components/news-page/team-info-card/team-info-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { UpdateCardComponent } from './components/news-page/update-card/update-c
     TopMenuComponent,
     NewsComponent,
     CarouselCardComponent,
-    UpdateCardComponent
+    UpdateCardComponent,
+    AppInfoCardComponent,
+    TeamInfoCardComponent
   ],
   imports: [
     BrowserModule,

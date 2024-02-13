@@ -5,7 +5,6 @@
   </div>
   <nav *ngIf="!hideListMenu" class="list_menu_items">
     <app-button *ngFor="let item of this.isLogedIn?this.loggedInlistMenuItems:this.notloggedInlistMenuItems"
-    (mouseup)="closeMenus()"
     [functionOrRoute]="item.id"
     [textContent]="item.text"></app-button>
   </nav>
@@ -16,7 +15,6 @@
   </div>
   <nav *ngIf="!hideProfileMenu" class="profile_menu_items">
     <app-button *ngFor="let item of this.isLogedIn?this.loggedInProfileMenuItems:this.notLoggedInProfileMenuItems"
-    (mouseup)="closeMenus()"
     [functionOrRoute]="item.id"
     [textContent]="item.text"
     >{{item.text}}</app-button>
