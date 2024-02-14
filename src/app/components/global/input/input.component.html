@@ -1,7 +1,7 @@
 <div class="input_item">
   <label [for]="id?id+'_input':'input'">{{name}}</label>
   <input
-  [id]="id?id+'_input':'input'"
+  [class]="id?id+'_input '+error:'input ' +error"
   [name]="name?name:'null'"
   [type]="type"
   [(ngModel)]="inputValue"

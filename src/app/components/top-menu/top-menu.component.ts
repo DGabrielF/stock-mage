@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./top-menu.component.css']
 })
 export class TopMenuComponent implements OnInit {
-  @Input() isLogedIn:boolean = false;
+  @Input() isLogedIn:boolean = true;
 
   hideListMenu:boolean = true;
   loggedInlistMenuItems:{id:string, text:string}[] = [
