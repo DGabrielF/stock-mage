@@ -5,8 +5,6 @@ import { FormsModule } from "@angular/forms"
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputComponent } from './components/global/input/input.component';
-import { ButtonComponent } from './components/global/button/button.component';
-import { ClickableDirective } from './components/global/button/clickable.directive';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ToggleHidePasswordComponent } from './components/global/toggle-hide-password/toggle-hide-password.component';
@@ -16,13 +14,13 @@ import { CarouselCardComponent } from './components/news-page/carousel-card/caro
 import { UpdateCardComponent } from './components/news-page/update-card/update-card.component';
 import { AppInfoCardComponent } from './components/news-page/app-info-card/app-info-card.component';
 import { TeamInfoCardComponent } from './components/news-page/team-info-card/team-info-card.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { FriendsComponent } from './pages/friends/friends.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    ButtonComponent,
-    ClickableDirective,
     RegisterComponent,
     LoginComponent,
     ToggleHidePasswordComponent,
@@ -31,7 +29,9 @@ import { TeamInfoCardComponent } from './components/news-page/team-info-card/tea
     CarouselCardComponent,
     UpdateCardComponent,
     AppInfoCardComponent,
-    TeamInfoCardComponent
+    TeamInfoCardComponent,
+    ProfileComponent,
+    FriendsComponent
   ],
   imports: [
     BrowserModule,

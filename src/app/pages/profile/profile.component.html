@@ -1,0 +1,56 @@
+<section class="profile">
+  <div class="profile_image">
+    <img src="" alt="">
+    <div class="overlay"></div>
+  </div>
+  <div class="profile_email">
+    <span>Email cadastrado</span>
+    <span>em**@***te.com</span>
+  </div>
+  <button *ngIf="hideChangePassword" (click)="toggleHideChangePassword()">alterar senha</button>
+  <div class="change_password_area" *ngIf="!hideChangePassword">
+    <div class="h_separator"></div>
+    <app-input
+    name="Senha atual"
+    type="password"
+    >
+    </app-input>
+    <div class="password">
+      <app-input
+      name="Nova senha"
+      [type]="showPassword?'text':'password'"
+      >
+      </app-input>
+      <app-toggle-hide-password [(showPassword)]="showPassword"></app-toggle-hide-password>
+    </div>
+    <app-input
+    name="Confirmar"
+    type="password"
+    >
+    </app-input>
+    <div class="button_area">
+      <button>confirmar</button>
+      <button (click)="toggleHideChangePassword()">cancelar</button>
+    </div>
+    <div class="h_separator"></div>
+  </div>
+  <button *ngIf="hideDisableAccount" (click)="toggleHideDisableAccount()">encerrar conta</button>
+  <div class="disable_account_area" *ngIf="!hideDisableAccount">
+    <div class="h_separator"></div>
+    <app-input
+    name="nome de usuário"
+    type="text"
+    >
+    </app-input>
+    <app-input
+    name="Senha"
+    type="password"
+    >
+    </app-input>
+    <div class="button_area">
+      <button>confirmar</button>
+      <button (click)="toggleHideDisableAccount()">cancelar</button>
+    </div>
+    <div class="h_separator"></div>
+</div>
+</section>
